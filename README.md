@@ -1,6 +1,12 @@
 # indux.id
 Source for induxid.github.io
 
+# Prerequisites
+* Node
+* NPM
+* Gulp
+* SASS
+
 # How to run
 * `npm install`
 * `bower install`
