@@ -1,0 +1,73 @@
+@charset "utf-8";
+@import "cover";
+@import "fonts";
+
+* {
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 300 !important;
+    text-shadow: none;
+    letter-spacing: 1px;
+}
+
+a {
+    &:hover {
+        cursor: pointer !important;
+    }
+}
+
+.site-wrapper {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    .site-wrapper-inner {
+        background-color: rgba(84, 95, 171, 0.8);
+    }
+}
+
+.masthead {
+    .inner {
+        h3.masthead-brand {
+            img {
+                width: 100px;
+                height: auto;
+            }
+        }
+        ul.nav {
+            li {
+                a {
+                    font-size: 13px;
+                }
+                &.active,
+                &:hover {
+                    a {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cover {
+    h1 {
+        font-weight: 500 !important;
+        letter-spacing: 10px;
+    }
+    a.btn {
+        background: none;
+        border: 1px solid white;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        &:hover {
+            background: white;
+            color: rgba(84, 95, 171, 1.0);
+        }
+    }
+}
+
+.mastfoot {
+    font-size: 12px;
+    i.fa-heart {
+        color: red;
+    }
+}

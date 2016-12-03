@@ -1,0 +1,22 @@
+{
+  "name": "indux-site",
+  "description": "Indux",
+  "main": "gulpfile.js",
+  "authors": [
+    "Yuri Pratama <yuri@indux.id>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {},
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}

@@ -1,0 +1,29 @@
+$proxima-nova: (
+    (300, normal, "ProximaNova-Light.otf",           "opentype"),
+    (300, italic, "ProximaNova-LightItalic.otf",     "opentype"),
+    (400, normal, "ProximaNova-Regular.otf",         "opentype"),
+    (400, italic, "ProximaNova-RegularItalic.otf",   "opentype"),
+    (500, normal, "ProximaNova-Semibold.otf",        "opentype"),
+    (500, italic, "ProximaNova-SemiboldItalic.otf",  "opentype"),
+    (600, normal, "ProximaNova-Bold.otf",            "opentype"),
+    (600, italic, "ProximaNova-BoldItalic.otf",      "opentype"),
+    (700, normal, "ProximaNova-ExtraBold.otf",       "opentype"),
+    (800, normal, "ProximaNova-Black.otf",           "opentype")
+);
+
+$font-face-collection: (
+    ("Proxima Nova", $proxima-nova)
+);
+
+@for $i from 1 to length($font-face-collection) {
+    $font-family : nth($font-face-collection, 1);
+    $font-collection : nth($font-face-collection, 2);
+    @each $weight, $style, $filename, $format in $font-collection {
+        @font-face {
+            font-family: $font-family;
+            font-weight: $weight;
+            font-style: $style;
+            src: url('../fonts/#{$filename}') format('#{$format}');
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "indux-site",
+  "version": "1.0.0",
+  "description": "Indux",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.16.0",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect-php": "0.0.8",
+    "gulp-copy": "0.0.2",
+    "gulp-file-include": "^0.14.0",
+    "gulp-sass": "^2.3.2",
+    "main-bower-files": "^2.13.1"
+  }
+}
