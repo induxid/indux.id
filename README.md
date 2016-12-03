@@ -11,4 +11,4 @@ Source for induxid.github.io
 * `npm install`
 * `bower install`
 * `gulp serve`
-* Your site should be run from `/dist`
+* Your site should be run from `/dist`. Visit `http://localhost:3000` on your browser
