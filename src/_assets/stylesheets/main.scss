@@ -1,10 +1,11 @@
 @charset "utf-8";
 @import "cover";
 @import "fonts";
+@import url(http://webfonts-plus.herokuapp.com/src?family=Circular);
 
 * {
-    font-family: "Proxima Nova", sans-serif;
-    font-weight: 300 !important;
+    font-family: "Circular", sans-serif;
+    font-weight: 400 !important;
     text-shadow: none;
     letter-spacing: 1px;
 }
@@ -19,7 +20,14 @@ a {
     background-image: url(../img/background.jpg);
     background-size: cover;
     .site-wrapper-inner {
-        background-color: rgba(84, 95, 171, 0.8);
+        // background-color: rgba(84, 95, 171, 0.8);
+        background: linear-gradient( 
+            45deg,
+            rgba(0, 0, 255, 0.7),
+            rgba(255, 0, 0, 0.7) 
+          ), 
+          url(../img/cover-bg.jpg);
+
     }
 }
 
