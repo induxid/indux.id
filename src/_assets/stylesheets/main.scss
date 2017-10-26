@@ -33,7 +33,12 @@ a {
 
 .masthead {
     .inner {
+        text-align: center;
         h3.masthead-brand {
+            // margin: 0 auto;
+            display: block;
+            width: 100%;
+            // text-align: center;
             img {
                 width: 100px;
                 height: auto;
@@ -71,11 +76,34 @@ a {
             color: rgba(84, 95, 171, 1.0);
         }
     }
+    p.lead {
+        font-size: 72px;
+        font-weight: 400 !important;
+        line-height: 72px;
+        strong {
+            font-weight: 800 !important;
+        }
+
+    }
 }
 
 .mastfoot {
     font-size: 12px;
     i.fa-heart {
         color: red;
+    }
+    ul {
+        padding: 0px;
+        margin: 0px;
+        li {
+            display: inline;
+            margin-right: 10px;
+            margin-left: 10px;
+            font-size: 14px;
+            a {
+                font-weight: 400 !important;
+            }
+        }
+        margin-bottom: 20px;
     }
 }
